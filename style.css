@@ -26,11 +26,11 @@ input {
 label {
   position: relative;
   /* border: solid; */
-  width: 400px;
+  width: 200px;
   height: 200px;
   border-radius: 999px;
   background: #f3f3f3;
-  box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.5) inset;
+  /* box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.5) inset; */
   cursor: pointer;
 }
 
@@ -40,12 +40,12 @@ label {
   height: 160px;
   border-radius: 99px;
   background: var(--light);
-  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05),
-    -10px -10px 30px rgba(0, 0, 0, 0.05) inset;
+  /* box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.05),
+    -10px -10px 30px rgba(0, 0, 0, 0.05) inset; */
   position: absolute;
   top: 50%;
   left: 0%;
-  transform: translate(10%, -50%);
+  transform: translate(15%, -50%);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -53,16 +53,15 @@ label {
 }
 
 .sun {
-  color: #ffd600;
-  fill: #ffd600;
+  color: #6941c6;
   margin-top: 0%;
   opacity: 1;
 }
 
 .moon {
   margin-top: -150%;
-  color: white;
-  fill: white;
+  color: #6941c6;
+  fill: #6941c6;
   opacity: 0;
 }
 
@@ -77,9 +76,8 @@ input[type="checkbox"]:checked + .display {
 }
 
 input[type="checkbox"]:checked + .display label {
-  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5) inset;
-
-  background: #1f1f21;
+  /* box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5) inset; */
+  background: #2c2c2f;
 }
 
 input[type="checkbox"]:checked + .display label .circle {
@@ -98,8 +96,4 @@ input[type="checkbox"]:checked + .display label .circle .sun {
 input[type="checkbox"]:checked + .display label .circle .moon {
   margin-top: 0%;
   opacity: 1;
-}
-
-label:active .circle {
-  width: 200px;
 }
